@@ -115,7 +115,7 @@ export default function Hero() {
                 <OutlineBox>
 
 
-                    <Video src="/hero.mp4" />
+                    <Video src="/hero.mp4" routePath='/' />
 
                 </OutlineBox>
 

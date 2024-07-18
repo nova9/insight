@@ -41,7 +41,7 @@ export default function About() {
                 <Grid item xs={12} md={6}>
                     <OutlineBox>
 
-                        <Video src="/pb.mp4" />
+                        <Video src="/pb.mp4" routePath='/about' />
 
                     </OutlineBox>
 
@@ -72,7 +72,7 @@ export default function About() {
                 <Grid item xs={12} md={6}>
                     <OutlineBox>
 
-                        <Video src="/e.mp4" />
+                        <Video src="/e.mp4" routePath='/about' />
 
                     </OutlineBox>
                 </Grid>
