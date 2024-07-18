@@ -1,5 +1,5 @@
-import { alpha, Box, Paper, Typography } from "@mui/material"
-import { useEffect, useState } from "react"
+import { Box, Typography } from "@mui/material";
+import { useEffect, useState } from "react";
 import OutlineBox from "./OutlineBox";
 
 type TimeLeftKeys = 'days' | 'hours' | 'minutes' | 'seconds';
@@ -77,16 +77,16 @@ export default function Countdown() {
     return <>
         <OutlineBox>
             <Box
-            sx={(theme) => ({
-                // mt: 5,
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                flexDirection: 'row',
-            })}
-        >
-            {timerComponents.length ? timerComponents : <span>Time's up!</span>}
-        </Box>
+                sx={{
+                    // mt: 5,
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    flexDirection: 'row',
+                }}
+            >
+                {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+            </Box>
         </OutlineBox>
     </>;
 }

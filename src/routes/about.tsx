@@ -1,4 +1,4 @@
-import { Box, Typography, Grid, Avatar, Container, alpha } from '@mui/material';
+import { Avatar, Box, Container, Grid, Typography } from '@mui/material';
 import Logo from '../components/Logo';
 import OutlineBox from '../components/OutlineBox';
 import Video from '../components/Video';
