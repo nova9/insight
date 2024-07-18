@@ -1,6 +1,7 @@
 import { useTheme } from "@mui/material/styles";
+import { memo } from "react";
 
-export default function Video({src}: { src: string }) {
+function Video({src}: { src: string }) {
     const theme = useTheme();
 
     return (
@@ -23,3 +24,5 @@ export default function Video({src}: { src: string }) {
         </video>
     )
 }
+
+export default memo(Video, (prevProps, nextProps) => prevProps.src === nextProps.src);
